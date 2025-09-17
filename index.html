@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guess the number</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,18 +15,25 @@
     <input type="number" name="number" id="number" />
     <button type="submit">submit</button>
   </form>
-  <div>
+  <div id="bloqueAux">
     <div>
       <h2>Lista de intentos</h2>
       <ol id="attemptList"></ol>
     </div>
     <div>
       <h2>Options</h2>
-      <form>
-        <input type="radio" name="radio" id="radio10">
-        <label for="radio10"> 1 a 10 con 3 intentos</label>
-        <input type="radio" name="radio" id="radio50">
-        <label for="radio50">1 a 50 con 5 intentos</label>
+      <form id="formOpciones">
+          <div>
+            <input type="radio" name="radio" id="radio10">
+            <label for="radio10"> 1 a 10 con 3 intentos</label>
+
+          </div>
+
+          <div>
+            <input type="radio" name="radio" id="radio50">
+            <label for="radio50">1 a 50 con 5 intentos</label>
+
+          </div>
         <button type="submit">Seleccionar opcion</button>
       </form>
     </div>
